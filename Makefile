@@ -6,7 +6,7 @@
 #    By: cbridget <cbridget@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/07 15:21:45 by cbridget          #+#    #+#              #
-#    Updated: 2021/10/14 18:35:52 by cbridget         ###   ########.fr        #
+#    Updated: 2021/10/18 15:06:46 by cbridget         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,13 +30,14 @@ FLAGS = -Wall -Wextra -Werror
 all : $(NAME)
 
 $(NAME) : $(OBJ)
-	ar rcs $(NAME) $?
+	ar rcs $(NAME) $? libft.h
 
 %.o : %.c libft.h
 	gcc $(FLAGS) -c $< -o $@
 
-bonus : all
-	make OBJ="$(OBJ_BON)" all
+bonus : $(OBJ) $(OBJ_BON)
+	ar rcs $(NAME) $? libft.h
+
 clean :
 	rm -f $(OBJ) $(OBJ_BON)
 
