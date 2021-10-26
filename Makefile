@@ -6,7 +6,7 @@
 #    By: cbridget <cbridget@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/07 15:21:45 by cbridget          #+#    #+#              #
-#    Updated: 2021/10/18 15:06:46 by cbridget         ###   ########.fr        #
+#    Updated: 2021/10/26 19:36:16 by cbridget         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,10 +33,11 @@ $(NAME) : $(OBJ)
 	ar rcs $(NAME) $? libft.h
 
 %.o : %.c libft.h
-	gcc $(FLAGS) -c $< -o $@
+	cc $(FLAGS) -c $< -o $@
 
-bonus : $(OBJ) $(OBJ_BON)
-	ar rcs $(NAME) $? libft.h
+bonus :
+	@make OBJ="$(OBJ_BON)"
+	@make
 
 clean :
 	rm -f $(OBJ) $(OBJ_BON)
