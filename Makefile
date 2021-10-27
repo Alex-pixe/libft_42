@@ -6,7 +6,7 @@
 #    By: cbridget <cbridget@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/07 15:21:45 by cbridget          #+#    #+#              #
-#    Updated: 2021/10/26 19:36:16 by cbridget         ###   ########.fr        #
+#    Updated: 2021/10/27 17:14:27 by cbridget         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ all : $(NAME)
 $(NAME) : $(OBJ)
 	ar rcs $(NAME) $? libft.h
 
-%.o : %.c libft.h
+%.o : %.c libft.h Makefile
 	cc $(FLAGS) -c $< -o $@
 
 bonus :
