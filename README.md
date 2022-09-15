@@ -23,3 +23,13 @@ and for the bonus part you need to write functions to work with linked lists.
 	make clean //remove objects files
 	make fclean //remove objects files and libft.a
 	```
+  
+### Tests:
+* Mandatory part
+![image](https://github.com/cbridget42/libft_42/blob/main/images/Screen%20Shot%202022-09-15%20at%204.35.55%20PM.png)
+* Bonus part
+![image](https://github.com/cbridget42/libft_42/blob/main/images/Screen%20Shot%202022-09-15%20at%204.39.45%20PM.png)
+  
+### final score:
+![image](https://github.com/cbridget42/libft_42/blob/main/images/Screen%20Shot%202022-09-15%20at%204.43.23%20PM.png)
+  
