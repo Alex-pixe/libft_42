@@ -17,7 +17,7 @@ and for the bonus part you need to write functions to work with linked lists.
 	```
 * then you will have a libft.a file.
 	+ to use it you need to add libft.h header to your project.
-	+ compile your project with libft.a and with flag -I ./path to libft_42
+	+ compile your project with -Llibft -lft flags
 * also you can:
 	```bash
 	make clean //remove objects files
